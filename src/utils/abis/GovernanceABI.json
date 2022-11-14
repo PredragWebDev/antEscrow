@@ -1,0 +1,418 @@
+[
+    {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address[]",
+                "name": "_authors",
+                "type": "address[]"
+            }
+        ],
+        "name": "addAuthors",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "authors",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "coinToken",
+        "outputs": [
+            {
+                "internalType": "contract IERC20",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "enum Governance.PType",
+                "name": "_type",
+                "type": "uint8"
+            },
+            {
+                "internalType": "string",
+                "name": "_title",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_detail",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_supportPercent",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_minApprovePercent",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "_receipent",
+                "type": "address"
+            }
+        ],
+        "name": "createProposal",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_proposalId",
+                "type": "uint256"
+            }
+        ],
+        "name": "endVote",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "escrowProtocol",
+        "outputs": [
+            {
+                "internalType": "contract IEscrowProtocal",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getAuthors",
+        "outputs": [
+            {
+                "internalType": "address[]",
+                "name": "",
+                "type": "address[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_proposalId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getVotersbyId",
+        "outputs": [
+            {
+                "internalType": "address[]",
+                "name": "",
+                "type": "address[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "isAuthor",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "proposalCount",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "proposals",
+        "outputs": [
+            {
+                "internalType": "enum Governance.PType",
+                "name": "ptype",
+                "type": "uint8"
+            },
+            {
+                "internalType": "address",
+                "name": "creator",
+                "type": "address"
+            },
+            {
+                "internalType": "string",
+                "name": "title",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "detail",
+                "type": "string"
+            },
+            {
+                "internalType": "enum Governance.Status",
+                "name": "status",
+                "type": "uint8"
+            },
+            {
+                "internalType": "uint256",
+                "name": "startTime",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "endTime",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "supportPercent",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "minApprovePercent",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "yesamount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "noamount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "receipent",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address[]",
+                "name": "_authors",
+                "type": "address[]"
+            }
+        ],
+        "name": "removeAuthors",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_proposalId",
+                "type": "uint256"
+            }
+        ],
+        "name": "startVote",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_proposalId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "bool",
+                "name": "_vote",
+                "type": "bool"
+            }
+        ],
+        "name": "vote",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "voters",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "votes",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "proposalId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "voter",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "bool",
+                "name": "vote",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]

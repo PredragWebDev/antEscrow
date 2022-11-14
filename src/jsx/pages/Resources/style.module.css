@@ -1,0 +1,100 @@
+.createbutton {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 40px;
+  min-width: 116px;
+  padding: 0px 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  user-select: none;
+  background: linear-gradient(
+    190deg,
+    rgb(50, 255, 245) -100%,
+    rgb(8, 190, 229) 80%
+  );
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  border: 0px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px;
+  transition-property: all;
+  transition-duration: 50ms;
+  transition-timing-function: ease-in-out;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+.header > svg {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.header > svg:hover {
+  opacity: 0.6;
+}
+.actionpanel {
+  margin-top: 20px;
+  padding: 16px;
+  padding-bottom: 3px;
+  border-radius: 4px;
+  overflow-wrap: break-word;
+  font-size: 14px;
+  font-weight: 400;
+}
+.primaryaction {
+  color: rgb(7, 146, 175);
+  background: rgb(235, 250, 253);
+  border-left: 2px solid rgb(8, 190, 229);
+}
+.secondaryaction {
+  color: rgb(199, 135, 30);
+  background: rgb(255, 241, 218);
+  border-left: 2px solid rgb(245, 166, 35);
+}
+.inputpanel > input {
+  margin-top: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 0px 12px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 228, 233);
+  color: rgb(33, 43, 54);
+  border-radius: 4px;
+  appearance: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.inputpanel {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.inputpanel > div > span {
+  color: rgb(8, 190, 229);
+}
+.createbutton:disabled {
+  background: rgb(241, 243, 247);
+  color: rgb(99, 115, 129);
+}
+.createbutton:active {
+  margin-top: 3px;
+}
+.panel {
+  padding: 0 50px;
+}
+.progress {
+  height: 6px;
+}
+.ellipse {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}

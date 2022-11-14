@@ -1,0 +1,277 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_coinToken",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address[]",
+                "name": "_addrs",
+                "type": "address[]"
+            }
+        ],
+        "name": "addTokenList",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "coinToken",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_refer",
+                "type": "string"
+            }
+        ],
+        "name": "depositEth",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_tokenId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "_refer",
+                "type": "string"
+            }
+        ],
+        "name": "depositToken",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getTokenList",
+        "outputs": [
+            {
+                "internalType": "address[]",
+                "name": "",
+                "type": "address[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "removeStuckBNB",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_token",
+                "type": "address"
+            }
+        ],
+        "name": "removeStuckToken",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address[]",
+                "name": "_addrs",
+                "type": "address[]"
+            }
+        ],
+        "name": "removeTokenList",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "tokenList",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "transferCount",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "transfers",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "t",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "date",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "source",
+                "type": "address"
+            },
+            {
+                "internalType": "string",
+                "name": "refer",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_receipent",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_tokenId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "_refer",
+                "type": "string"
+            }
+        ],
+        "name": "withdraw",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]

@@ -1,0 +1,16 @@
+.sidebar {
+  position: absolute;
+  right: -450px;
+  top: 0;
+  background-color: #222552;
+  padding: 20px;
+  width : 450px;
+  color: white;
+  height : 100%;
+  overflow-x: hidden;
+  transition: all 0.5s;
+  z-index: 1;
+}
+.expand{
+  right : 0;
+}
